@@ -1,6 +1,7 @@
 import React from 'react';
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import MyImage from '../assets/Image_20240810_152836_718.jpeg'; // Adjusted path
 
 import {
   MDBCol,
@@ -43,7 +44,7 @@ export default function ProfilePage() {
             <MDBCard className="mb-4">
               <MDBCardBody className="text-center">
                 <MDBCardImage
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                  src={MyImage}
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: '150px' }}
