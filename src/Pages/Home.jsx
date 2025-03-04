@@ -92,7 +92,7 @@ export default function ProfilePage() {
                     <MDBCardText>Full Name</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">Johnatan Smith</MDBCardText>
+                    <MDBCardText className="text-muted">Subhajit Das</MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -101,7 +101,7 @@ export default function ProfilePage() {
                     <MDBCardText>Email</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">example@example.com</MDBCardText>
+                    <MDBCardText className="text-muted">subhajitdas103@gmail.com</MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -110,7 +110,7 @@ export default function ProfilePage() {
                     <MDBCardText>Phone</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">(097) 234-5678</MDBCardText>
+                    <MDBCardText className="text-muted">(+91)90022945955</MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />
