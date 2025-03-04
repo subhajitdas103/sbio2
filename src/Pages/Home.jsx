@@ -50,7 +50,7 @@ export default function ProfilePage() {
                   style={{ width: '150px' }}
                   fluid />
                 <p className="text-muted mb-1">Full Stack Developer</p>
-                <p className="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                <p className="text-muted mb-4">React JS , Laravel , Mysql , API</p>
                 <div className="d-flex justify-content-center mb-2">
                   <MDBBtn>Follow</MDBBtn>
                   <MDBBtn outline className="ms-1">Message</MDBBtn>
@@ -63,23 +63,27 @@ export default function ProfilePage() {
                 <MDBListGroup flush className="rounded-3">
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fas icon="globe fa-lg text-warning" />
-                    <MDBCardText>https://mdbootstrap.com</MDBCardText>
+                    <MDBCardText>Technical Skills</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github fa-lg" style={{ color: '#333333' }} />
-                    <MDBCardText>mdbootstrap</MDBCardText>
+                    <MDBCardText>✅ Backend:<br/> Laravel (Eloquent ORM), CodeIgniter 3 & 4, PHP (5 & 7), MySQL</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="twitter fa-lg" style={{ color: '#55acee' }} />
-                    <MDBCardText>@mdbootstrap</MDBCardText>
+                    <MDBCardText> Frontend: React.js, Tailwind CSS, JavaScript</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="instagram fa-lg" style={{ color: '#ac2bac' }} />
-                    <MDBCardText>mdbootstrap</MDBCardText>
+                    <MDBCardText>Authentication: Laravel Sanctum, Laravel Socialite (Google & Facebook Login)</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="facebook fa-lg" style={{ color: '#3b5998' }} />
-                    <MDBCardText>mdbootstrap</MDBCardText>
+                    <MDBCardText>✅ Tools & DevOps: Vite, XAMPP, Git, Postman</MDBCardText>
+                  </MDBListGroupItem>
+                  <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
+                    <MDBIcon fab icon="facebook fa-lg" style={{ color: '#3b5998' }} />
+                    <MDBCardText>✅Database Management: MySQL, Data Warehousing (Snowflake, Teradata)</MDBCardText>
                   </MDBListGroupItem>
                 </MDBListGroup>
               </MDBCardBody>
