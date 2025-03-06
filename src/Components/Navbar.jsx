@@ -96,7 +96,7 @@ const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <Logo>MyLogo</Logo>
+      <Logo>Portfolio - SUBHAJIT</Logo>
       <MenuMobile>
         <Link to="/">
           <MenuItem>Home</MenuItem>

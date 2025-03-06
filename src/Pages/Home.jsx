@@ -2,6 +2,9 @@ import React from 'react';
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
 import MyImage from '../assets/Image_20240810_152836_718.jpeg'; // Adjusted path
+import { faReact, faLaravel } from "@fortawesome/free-brands-svg-icons";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
   MDBCol,
@@ -65,18 +68,22 @@ export default function ProfilePage() {
                     <MDBIcon fas icon="globe fa-lg text-warning" />
                     <MDBCardText><h2>Technical Skills</h2></MDBCardText>
                   </MDBListGroupItem>
+
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github fa-lg" style={{ color: '#333333' }} />
-                    <MDBCardText>✅ Backend:<br/> Laravel (Eloquent ORM), CodeIgniter 3 & 4, PHP (5 & 7), MySQL</MDBCardText>
+                    <MDBCardText><FontAwesomeIcon icon={faLaravel} /> Backend:<br/> Laravel (Eloquent ORM), CodeIgniter 3 & 4, PHP (5 & 7), MySQL</MDBCardText>
                   </MDBListGroupItem>
+
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="twitter fa-lg" style={{ color: '#55acee' }} />
-                    <MDBCardText> Frontend: React.js, Tailwind CSS, JavaScript</MDBCardText>
+                    <MDBCardText><FontAwesomeIcon icon={faReact} /> Frontend: React.js, Tailwind CSS, JavaScript</MDBCardText>
                   </MDBListGroupItem>
+
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="instagram fa-lg" style={{ color: '#ac2bac' }} />
                     <MDBCardText>Authentication: Laravel Sanctum, Laravel Socialite (Google & Facebook Login)</MDBCardText>
                   </MDBListGroupItem>
+
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="facebook fa-lg" style={{ color: '#3b5998' }} />
                     <MDBCardText>✅ Tools & DevOps: Vite, XAMPP, Git, Postman</MDBCardText>
@@ -133,7 +140,7 @@ export default function ProfilePage() {
                     <MDBCardText>Address</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">Bay Area, San Francisco, CA</MDBCardText>
+                    <MDBCardText className="text-muted">Tamluk  , PurbaMedinipur , West engal , 721644</MDBCardText>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
