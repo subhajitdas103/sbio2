@@ -25,6 +25,17 @@ import {
 } from 'mdb-react-ui-kit';
 
 export default function ProfilePage() {
+
+
+  const handleRedirectToLinedin = () => {
+    window.open("https://www.linkedin.com/in/subhajitdas103/");
+  };
+
+  const handleRedirectToLinedinMessage = () => {
+    window.open("https://www.linkedin.com/in/subhajitdas103/");
+  };
+
+
   return (
     <section style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="py-5">
@@ -55,8 +66,9 @@ export default function ProfilePage() {
                 <p className="text-muted mb-1">Full Stack Developer</p>
                 <p className="text-muted mb-4">React JS , Laravel , Mysql , API</p>
                 <div className="d-flex justify-content-center mb-2">
-                  <MDBBtn>Follow</MDBBtn>
-                  <MDBBtn outline className="ms-1">Message</MDBBtn>
+                <MDBBtn onClick={handleRedirectToLinedin}>Follow</MDBBtn>
+                  <MDBBtn onClick={handleRedirectToLinedinMessage} outline className="ms-1">Message</MDBBtn>
+                  
                 </div>
               </MDBCardBody>
             </MDBCard>

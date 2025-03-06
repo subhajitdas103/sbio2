@@ -104,8 +104,8 @@ const Navbar = () => {
         <Link to="/about">
           <MenuItem>About</MenuItem>
         </Link>
-        <Link to="/services">
-          <MenuItem>Services</MenuItem>
+        <Link to="/projects">
+          <MenuItem>Projects</MenuItem>
         </Link>
         <Link to="/contact">
           <MenuItem>Contact</MenuItem>
@@ -124,8 +124,8 @@ const Navbar = () => {
           <Link to="/about" onClick={() => setMenuOpen(false)}>
             About
           </Link>
-          <Link to="/services" onClick={() => setMenuOpen(false)}>
-            Services
+          <Link to="/projects" onClick={() => setMenuOpen(false)}>
+          Projects
           </Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
