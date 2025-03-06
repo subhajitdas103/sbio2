@@ -43,3 +43,8 @@
 .sc-FEMpB {
   background-color: #2b255c !important;
 }
+
+.p-4 {
+  padding: 1.5rem !important;
+  border-radius: 3rem!important;
+}
