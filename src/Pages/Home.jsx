@@ -1,9 +1,9 @@
 import React from 'react';
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-
+import reactImage from '../assets/ReactJS-Framework-Benefits.png';
 import MyImage from '../assets/Image_20240810_152836_718.jpeg'; // Adjusted path
 import { faReact, faLaravel } from "@fortawesome/free-brands-svg-icons";
-
+import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
@@ -222,7 +222,29 @@ export default function ProfilePage() {
               </MDBCol>
               
             </MDBRow>
-            
+            <MDBCarousel showControls showIndicators fade>
+      <MDBCarouselItem itemId={1}>
+        <img 
+          src={reactImage}  
+          className="d-block w-100" 
+          alt="React JS"
+        />
+      </MDBCarouselItem>
+      <MDBCarouselItem itemId={2}>
+        <img 
+          src={('../assets/slide2.jpg')}  // Another way to import if needed
+          className="d-block w-100" 
+          alt="Slide 2"
+        />
+      </MDBCarouselItem>
+      <MDBCarouselItem itemId={3}>
+        <img 
+          src={('../assets/slide3.jpg')}  
+          className="d-block w-100" 
+          alt="Slide 3"
+        />
+      </MDBCarouselItem>
+    </MDBCarousel>
           </MDBCol>
           
         </MDBRow>
