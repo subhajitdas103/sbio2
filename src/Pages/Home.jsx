@@ -5,6 +5,9 @@ import MyImage from '../assets/Image_20240810_152836_718.jpeg'; // Adjusted path
 import { faReact, faLaravel } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Carousel from 'react-bootstrap/Carousel';
+// import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   MDBCol,
@@ -131,22 +134,15 @@ export default function ProfilePage() {
                 <hr />
                 <MDBRow>
                   <MDBCol sm="3">
-                    <MDBCardText>Phone</MDBCardText>
-                  </MDBCol>
-                  <MDBCol sm="9">
-                    <MDBCardText className="text-muted">(+91)90022945955</MDBCardText>
-                  </MDBCol>
-                </MDBRow>
-                <hr />
-                <MDBRow>
-                  <MDBCol sm="3">
                     <MDBCardText>Mobile</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">(098) 765-4321</MDBCardText>
+                    <MDBCardText className="text-muted">(+91) 90022945955</MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />
+                
+               
                 <MDBRow>
                   <MDBCol sm="3">
                     <MDBCardText>Address</MDBCardText>
@@ -214,7 +210,9 @@ export default function ProfilePage() {
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={55} valuemin={0} valuemax={100} />
                     </MDBProgress>
-
+                    
+                    
+  
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Backend API</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={66} valuemin={0} valuemax={100} />
@@ -222,10 +220,16 @@ export default function ProfilePage() {
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
+              
             </MDBRow>
+            
           </MDBCol>
+          
         </MDBRow>
+
+        
       </MDBContainer>
+      
     </section>
   );
 }
