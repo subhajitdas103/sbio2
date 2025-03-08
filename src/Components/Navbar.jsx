@@ -1,139 +1,39 @@
-// src/Components/Navbar.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Button from "react-bootstrap/Button";
 
-// Styled Components
-const NavbarContainer = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-`;
-
-const Logo = styled.h1`
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-`;
-
-const Menu = styled.ul`
-  list-style: none;
-  display: flex;
-  gap: 20px;
-`;
-
-const MenuItem = styled.li`
-  color: #fff;
-  cursor: pointer;
-  &:hover {
-    color: #f39c12;
-  }
-`;
-
-const BurgerIcon = styled.div`
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  width: 30px;
-  height: 25px;
-  justify-content: space-between;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 1001;
-
-  div {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-  }
-`;
-
-const MenuMobile = styled.div`
-  display: flex;
-  gap: 20px;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const MenuMobileOpen = styled.div`
-  display: none;
-  flex-direction: column;
-  gap: 15px;
-  position: absolute;
-  top: 60px;
-  right: 30px;
-  background-color: #333;
-  padding: 20px;
-  border-radius: 5px;
-
-  @media (max-width: 768px) {
-    display: flex;
-  }
-
-  a {
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-      color: #f39c12;
-    }
-  }
-`;
-
-// Navbar Component
-const Navbar = () => {
+const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <NavbarContainer>
-      <Logo>Portfolio - SUBHAJIT</Logo>
-      <MenuMobile>
-        <Link to="/">
-          <MenuItem>Home</MenuItem>
-        </Link>
-        <Link to="/about">
-          <MenuItem>About</MenuItem>
-        </Link>
-        <Link to="/projects">
-          <MenuItem>Projects</MenuItem>
-        </Link>
-        <Link to="/contact">
-          <MenuItem>Contact</MenuItem>
-        </Link>
-      </MenuMobile>
-      <BurgerIcon onClick={() => setMenuOpen(!menuOpen)}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </BurgerIcon>
-      {menuOpen && (
-        <MenuMobileOpen>
-          <Link to="/" onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            About
-          </Link>
-          <Link to="/projects" onClick={() => setMenuOpen(false)}>
-          Projects
-          </Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>
-            Contact
-          </Link>
-        </MenuMobileOpen>
-      )}
-    </NavbarContainer>
+    <Navbar expand="lg" bg="dark" variant="dark" sticky="top">
+      <Container>
+        <Navbar.Brand as={Link} to="/">Portfolio - SUBHAJIT</Navbar.Brand>
+        <Navbar.Toggle 
+          aria-controls="basic-navbar-nav" 
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
+        <Navbar.Collapse id="basic-navbar-nav" className={menuOpen ? "show" : ""}>
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/" onClick={() => setMenuOpen(false)}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/about" onClick={() => setMenuOpen(false)}>About</Nav.Link>
+            <Nav.Link as={Link} to="/projects" onClick={() => setMenuOpen(false)}>Projects</Nav.Link>
+            <Nav.Link as={Link} to="/contact" onClick={() => setMenuOpen(false)}>Contact</Nav.Link>
+            <NavDropdown title="More" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/services" onClick={() => setMenuOpen(false)}>Services</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/blog" onClick={() => setMenuOpen(false)}>Blog</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/support" onClick={() => setMenuOpen(false)}>Support</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default CustomNavbar;
